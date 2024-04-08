@@ -1,0 +1,9 @@
+/myworld 
+
+*.pyc 
+
+__pycache__/ 
+
+# Exclude database file 
+
+# db.sqlite3 
