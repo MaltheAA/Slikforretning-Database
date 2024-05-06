@@ -1,0 +1,21 @@
+{% extends "master.html" %}
+
+{% block title %}
+    Slikforretning - All members
+{% endblock %}
+
+{% block content %}
+
+    <p><a href="/">Forside</a></p>
+        <h1>Medlemmer</h1>
+
+        <p>Her er en liste af alle vores medlemmer.</p>
+
+        <ul>
+            {% for x in mymembers %}
+                <li><a href="details/{{ x.id }}">{{ x.firstname }} {{ x.lastname }}</a></li>
+            {% endfor %}
+        </ul>
+
+        <p>Hvis du klikker på deres navn kan du få mere information om dem, som deres yndlingsslik!</p>
+{% endblock %}

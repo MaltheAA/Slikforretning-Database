@@ -1,0 +1,19 @@
+{% extends "master.html" %}
+
+{% block title %}
+    Details about {{ mymember.firstname }} {{ mymember.lastname }}
+{% endblock %}
+
+{% block content %}
+        <h1>{{ mymember.firstname }} {{ mymember.lastname }}</h1>
+
+        <p>Addresse: {{ mymember.address }}</p>
+        <p>PostID: {{ mymember.postID }}</p>
+        <p>By: {{ mymember.city }}</p>
+        <p>Email: {{ mymember.email }}</p>
+        <p>Nummer: {{ mymember.phone }}</p>
+        <p>Yndlingsslik: {{ mymember.favoritecandy }}</p>
+
+        <p>Tilbage til <a href="/members">Medlemmer</a></p>
+
+{% endblock %}
